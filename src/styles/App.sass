@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap')
+
 .app-container
   text-align: center
   display: flex
   flex-direction: column
   min-height: 100vh
+  background-color: #1c1c1c
+  background-image: url('https://www.transparenttextures.com/patterns/black-linen.png')
 
 .character-card-container
   display: flex
@@ -13,19 +17,22 @@
   border: 1px solid #ccc
   padding: 10px
   margin: 10px
-  width: 200px
+  width: 50%
   text-align: left
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
   transition: transform 0.2s
   cursor: pointer
+  border-radius: 15px
+  background: linear-gradient(135deg, #00b5cc, #007bff)
 
-.character-card:hover
-  transform: scale(1.05)
+  &:hover
+    transform: scale(1.05)
 
-.character-card img
-  width: 100%
-  height: auto
-  object-fit: cover
+  img
+    width: 100%
+    height: auto
+    object-fit: cover
+    border-radius: 15px 15px 0 0
 
 .character-list
   display: flex
@@ -36,28 +43,39 @@
 .pagination
   display: flex
   justify-content: center
+  align-items: center
   margin: 20px 0
 
-.pagination button
-  margin: 0 5px
-  padding: 10px 20px
-  background-color: #00b5cc
-  color: white
-  border: none
-  border-radius: 4px
-  cursor: pointer
-  transition: background-color 0.3s, transform 0.2s
+  button
+    margin: 0 5px
+    padding: 10px 20px
+    background-color: #00b5cc
+    color: white
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    transition: background-color 0.3s, transform 0.2s
 
-.pagination button:hover
-  background-color: #007bff
-  transform: scale(1.05)
+    &:hover
+      background-color: #007bff
+      transform: scale(1.05)
 
-.pagination button:disabled
-  background-color: #cccccc
-  cursor: not-allowed
+    &:disabled
+      background-color: #cccccc
+      cursor: not-allowed
 
-.dropdown
-  width: 200px
-  margin: 20px auto
-  display: flex
-  justify-content: center
+  span
+    display: flex
+    align-items: center
+    margin: 0 10px
+
+select
+  margin: 0 auto
+  display: block
+  width: 300px
+  height: 40px
+
+h1
+  text-align: center
+  font-family: 'Comic Sans MS', cursive, sans-serif
+  color: #00b5cc

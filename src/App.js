@@ -59,7 +59,7 @@ const App = () => {
       setCurrentPage(currentPage + 1);
       setInternalPage(1);
     }
-    document.querySelector('.dropdown').value = '';
+    document.querySelector('select').value = '';
   };
 
   const handlePrevPage = () => {
@@ -69,7 +69,7 @@ const App = () => {
       setCurrentPage(currentPage - 1);
       setInternalPage(2);
     }
-    document.querySelector('.dropdown').value = '';
+    document.querySelector('select').value = '';
   };
 
   const handleCharacterClick = (character) => {
